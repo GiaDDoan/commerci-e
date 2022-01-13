@@ -1,0 +1,26 @@
+.sub_nav {
+  border-top: 1px solid var(--text-clr);
+  border-bottom: 1px solid var(--text-clr);
+  /* border-bottom: 1px solid var(--header-text-clr); */
+  /* background-color: #5a5a5a; */
+  background-color: var(--sub-nav-clr);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 10px 0; */
+  height: var(--header-sub-height);
+  list-style-type: none;
+}
+
+.category__link {
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: 200ms ease-in-out;
+  font-weight: bold;
+  color: var(--bg-clr);
+}
+
+.category__link:hover {
+  cursor: pointer;
+  color: #ec6222;
+}

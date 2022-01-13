@@ -1,0 +1,63 @@
+.typehead-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  --typehead-height: 30px;
+  --typehead-width: 80%;
+}
+
+.typehead-input-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: var(--typehead-width);
+}
+
+.typehead-input {
+  padding-left: 10px;
+  flex: 1;
+  border: none;
+}
+
+.typehead-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--typehead-height);
+  width: var(--typehead-height);
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.typehead-icon-wrapper:hover {
+  background-color: hsl(38, 22%, 88%);
+}
+
+.typehead-suggestions {
+  background-color: #fff;
+  color: black;
+  position: absolute;
+  top: var(--typehead-height);
+  width: var(--typehead-width);
+  padding-left: 15px;
+  border: solid 1px gray;
+  max-height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.typehead-option {
+  border: solid 1px transparent;
+  list-style-type: none;
+}
+
+.typehead-option:hover {
+  border: solid 1px black;
+}
+
+.highlith-part {
+  font-weight: bold;
+}

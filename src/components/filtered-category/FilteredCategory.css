@@ -1,0 +1,14 @@
+.category__filtered {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: solid 1px green;
+  padding-top: 20px;
+}
+
+.category__filtered__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--category-gap);
+}

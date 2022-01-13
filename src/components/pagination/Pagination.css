@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 2rem 0;
+
+  --btn-size: 2.5rem;
+}
+
+.pagination-styling {
+  height: var(--btn-size);
+}
+
+.page-btn {
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.page-btn:hover {
+  background-color: var(--header-text-clr);
+}
+
+.current-page {
+  margin: 0 0.2rem;
+  width: var(--btn-size);
+}
+
+.prev-btn {
+  padding: 0 calc(var(--btn-size) / 2.5);
+}
+
+.next-btn {
+  padding: 0 calc(var(--btn-size) / 2.5);
+}

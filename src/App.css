@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  transition: 200ms ease-in-out;
+
+  /* COLOR THEMES */
+
+  --main-nav-clr: hsl(251, 19%, 29%);
+  --sub-nav-clr: hsl(251, 19%, 25%);
+  --separator-clr: hsl(251, 19%, 25%);
+  --bg-clr: hsl(38, 24%, 93%);
+  --product-bg-clr: hsl(38, 24%, 99%);
+  --header-text-clr: hsl(19, 84%, 53%);
+  --on-hover-clr: hsl(19, 84%, 53%);
+  --nav-hover-clr: hsl(11, 81%, 70%);
+  --filter-bdr-clr: hsl(19, 84%, 45%);
+  --filter-clr: hsl(19, 84%, 48%);
+  --dark-red: hsl(23, 93%, 26%);
+  --text-clr: hsl(30, 11%, 4%);
+  --close-clr: hsl(0, 72%, 56%);
+  --validation-clr: hsl(129, 100%, 33%);
+
+  /* BUTTON COLORS */
+  --btn-clr: hsl(251, 19%, 25%);
+  --btn-clr-hover: hsl(17, 82%, 45%);
+
+  /* GAPS */
+  --category-gap: 2rem 1rem;
+
+  /* COMPONENT SIZES */
+  --header-main-height: 65px;
+  --header-sub-height: 40px;
+  --product-height: 360px;
+
+  /* SIZING */
+
+  /* FONT-SIZES */
+  --fs-600: 1.4rem;
+  --fs-400: 1rem;
+  --fs-300: 0.9rem;
+  --fs-error: 5em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* input {
+  margin-right: 0.3rem;
+} */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
+  background-color: var(--bg-clr);
+}
+
+.body {
+  display: flex;
+  /* flex: 1; */
+  height: 100%;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.base-fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 0.5em;
+  background-color: var(--sub-nav-clr);
+  color: var(--bg-clr);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
