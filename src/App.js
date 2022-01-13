@@ -24,7 +24,7 @@ const initialFilter = {
 };
 
 function App() {
-  const [cartToggle, setCartToggle] = useState(true);
+  const [cartToggle, setCartToggle] = useState(false);
   const [filter, setFilter] = useState(initialFilter);
   const [confirmationName, setConfirmationName] = useState("");
 
